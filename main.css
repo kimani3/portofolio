@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap');
-
+    
+@import url('https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css');
 
 * {
     margin: 0;
@@ -404,11 +405,17 @@ width:15rem;
     position: absolute;
     top:0;
     left:0;
-    width:100%;
+    background: var(--main-color);
+    width:0;
     height:100%;
     z-index:-1;
-
+    transition: .5s;
 }
+.education-content .content:hover::before{
+    width:100%;
+    /* background-color: var(--second_background_color); */
+}
+
 .education-content .content .year{
     font-size: 1.5rem;
     color:var(--second_background_color);
@@ -437,18 +444,19 @@ width:15rem;
 }
 .skills .skills-row{
     display: flex;
-    justify-content: space-evenly
+    justify-content: space-evenly;
     
     
 }
 .skills-row .skills-column{
     flex-direction: row;
-    padding:1rem;
+    padding:50px;
+    flex: 1 1 40rem;
     
 }
 .skills-column .title{
     font-size: 2.5rem;
-    margin:0 0 1.5rem;
+    margin:0 0 1.5 rem;
 }
 .skills-box .skills-content{
     position:relative;
@@ -463,7 +471,7 @@ width:15rem;
     font-size: 1.7rem;
     display:flex;
     justify-content: space-between;
-    /* word-spacing: 5px; */
+    word-spacing: 5px;
 }
 .skills-content .progress h3 span{
     color: var(--background-textcolor);
@@ -484,7 +492,7 @@ width:15rem;
     height:100%;
     border-radius: .3rem;
     background:var(--second_background_color);
-    /* word-spacing: 5px; */
+    
 }
 .skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span{
     width:90%;
@@ -514,7 +522,7 @@ width:15rem;
 
 .contact {
     min-height:auto;
-    padding: bottom 7rem; ;
+    padding-bottom: 7rem; 
 }
 .contact form {
     max-width:70rem;
@@ -527,6 +535,7 @@ width:15rem;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    background: transparent;
 }
 .contact form .input-box .input-field{
     position: relative;
@@ -537,11 +546,34 @@ width:15rem;
 .contact form .textarea-field textarea{
     width:100%;
     height: 100%;
-    padding: 1.5rem;
-    font-size:1.6rem;
-    color: var(--second_background_color);
-    background: transparent;
+    padding: .5rem;
+    font-size:1.2rem;
+    color: var(--background-textcolor);
+    background:transparent;
     border-radius: .6rem;
-    border:.2rem solid var(--background-color)
-
+    border:.2rem solid var(--second_background_color);
 }
+.contact form .input-box .input-field input::placeholder,
+.contact form .textarea-field textarea::placeholder{
+    color: var(--background-textcolor);
+}
+/* .contact form .focus{
+    position:obsolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height:100%;
+    
+} */
+
+.contact form .textarea-field{
+    position: relative;
+    margin: .8rem 0 2.7rem;
+    display: flex;
+}
+.contact form .textarea-field textarea{
+    resize: none;
+}
+/* .contact form .btn-box.btns .btn{
+    cursor: pointer;
+} */
