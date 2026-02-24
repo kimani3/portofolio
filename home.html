@@ -1,242 +1,436 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <title> Waceke Kimani</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <title>Boreas Lee Kimani — Dev & CyberSec</title>
 </head>
-
 <body>
-    <!--header design-->
-    <header class="header">
-        <a href="#" class="logo">Lee.</a>
+
+    <!-- Animated Background -->
+    <div class="bg-grid"></div>
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <a href="#home" class="logo">BLK<span>.</span></a>
         <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#About">About</a>
-            <a href="#Education">Education</a>
-            <a href="#Skills">Skills</a>
-            <a href="#Contacts">Contacts</a>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#experience">Journey</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
         </nav>
+        <div class="menu-toggle" id="menuToggle">
+            <span></span><span></span><span></span>
+        </div>
     </header>
-    <section class="home">
+
+    <!-- Hero Section -->
+    <section class="home" id="home">
         <div class="home-content">
-            <h1> Hi, I'm Waceke Kimani</h1>
-            <h3>Python Dev|cyberSec Expert</h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                laborum.
+            <div class="tag-line reveal">
+                <span class="dot"></span> Available for opportunities
+            </div>
+            <h1 class="reveal-delay-1">
+                Boreas Lee<br><em>Kimani</em>
+            </h1>
+            <h3 class="reveal-delay-2">Python Dev <span class="sep">×</span> CyberSec Expert <span class="sep">×</span> ICT Specialist</h3>
+            <p class="reveal-delay-3">
+                Building secure, scalable digital solutions — from hospital management systems to financial platforms. 
+                Based in Kenya, working globally.
             </p>
-            <div class="btn-box">
-                <a href="#">Hire Me</a>
-                <a href="#">Let's Talk</a>
+            <div class="btn-box reveal-delay-4">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Let's Talk</a>
+            </div>
+
+            <div class="home-sci">
+                <a href="#" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+                <a href="#" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+                <a href="#" aria-label="GitHub"><i class='bx bxl-github'></i></a>
             </div>
         </div>
-        <div class="home-sci">
-            <a href="#"><i class='bx bxl-facebook'></i></a>
-            <a href="#"><i class='bx bxl-twitter'></i></a>
-            <a href="#"><i class='bx bxl-linkedin'></i></a>
 
+        <div class="home-visual">
+            <div class="avatar-wrap">
+                <div class="avatar-ring ring-1"></div>
+                <div class="avatar-ring ring-2"></div>
+                <div class="avatar-core">
+                    <span>BLK</span>
+                </div>
+            </div>
+            <div class="floating-badge badge-1">
+                <i class='bx bxl-python'></i> Python
+            </div>
+            <div class="floating-badge badge-2">
+                <i class='bx bx-shield-quarter'></i> CyberSec
+            </div>
+            <div class="floating-badge badge-3">
+                <i class='bx bx-code-alt'></i> Django
+            </div>
+        </div>
+
+
+            <span>scroll</span>
+            <div class="scroll-line"></div>
         </div>
     </section>
 
-    <section class="about" id="About">
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="section-label">// 01 — About</div>
         <h2 class="heading">About <span>Me</span></h2>
-        <div class="about-img">
-            <img src="img/gamer.jpg" alt="a ">
-            <span class="circle-spin"></span>
-        </div>
-        <div class="about-content">
-            <h3>Python Dev|cyberSec Expert</h3>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                laborum.
-            </p>
-            <div class="btn-box btns">
-                <a href="#" class="btn">Read More </a>
+        <div class="about-grid">
+            <div class="about-img-wrap">
+                <div class="about-img">
+                    <img src="img/gamer.jpg" alt="Lee Kimani">
+                </div>
+                <div class="about-img-decor"></div>
             </div>
-        </div>
-
-    </section>
-    <!--education sections-->
-    <section class="education" id="Education">
-        <h2 class="heading">My <span> Journey</span></h2>
-
-        <div class="education-row">
-            <div class="education_column">
-                <h3 class="title">Education</h3>
-
-                <div class="education-box">
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class='bx bxs-calendar'></i> 2018 - 2023 </div>
-                            <h3> Undergraduate Degree - KCA UNIVERSITY</h3>
-                            <P> Awarded a degree in Software Develpment. Second class lower division </P>
-                        </div>
+            <div class="about-content">
+                <h3>Python Dev <span>&</span> CyberSec Expert</h3>
+                <p>
+                    I'm Boreas Lee Kimani — a software developer and ICT professional with over 3 years of hands-on experience 
+                    building and deploying digital solutions across healthcare, finance, and government sectors in Kenya.
+                </p>
+                <p>
+                    From developing hospital management systems to building financial platforms, I combine 
+                    strong engineering skills with cybersecurity awareness to deliver solutions that are both 
+                    functional and secure.
+                </p>
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="stat-num">3+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">5+</span>
+                        <span class="stat-label">Projects Delivered</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">2</span>
+                        <span class="stat-label">Counties Served</span>
                     </div>
                 </div>
-            </div>
-            <div class="education_column">
-                <div class="education-box">
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class='bx bxs-calendar'></i> 2014 - 2017 </div>
-                            <h3> A Levels - MOI TEA SECONDARY SCHOOL</h3>
-                            <P> Received a mean grade of B- </P>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="education_column">
-                <h3 class="title"> EXPERIENCE </h3>
-                <div class="education-box">
-
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class='bx bxs-calendar'></i> MAY 2022 - DEC 2022 </div>
-                            <h3> Karen Hospital - Junior Developer attache` </h3>
-                            <ul class='list'>
-                                <li> collaborated closely with the customer realtions team to instal the queuing syatem
-                                    and train staff members which saw an improvement of the turnaround time by 60% </li>
-                                <li>Database management uding PostgreSQL and maintained procedures and reports that
-                                    provided technical support to the entire organization.
-                            </ul>
-                            </u>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="education_column">
-                <div class="education-box">
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class='bx bxs-calendar'></i> AUG 2022 - SEPT 2022 </div>
-                            <h3> IEBC - CLERK </h3>
-                            <ul class="list">
-                                <li>Ensured the biometric authentication process was conducted smoothly and efficiently
-                                </li>
-                                <li> Worked closely wit election officials to ensure all equipment was properly
-                                    maintained and that all<br>
-                                    necessary security measures were in place to ensure the integrity of the national
-                                    general elections</li>
-                            </ul>
-
-                        </div>
-                    </div>
-                </div>
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
             </div>
         </div>
     </section>
 
+    <!-- Experience / Education Section -->
+    <section class="experience" id="experience">
+        <div class="section-label">// 02 — Journey</div>
+        <h2 class="heading">My <span>Journey</span></h2>
 
+        <div class="timeline-grid">
+            <!-- Experience Column -->
+            <div class="timeline-col">
+                <h3 class="col-title"><i class='bx bx-briefcase'></i> Experience</h3>
+                <div class="timeline">
 
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-year">2023 — Present</div>
+                            <h4>ICT Officer Intern</h4>
+                            <h5>Muranga County Government</h5>
+                            <ul>
+                                <li>Led the training and installation of a hospital management system across all hospitals in Muranga County, improving patient data management county-wide.</li>
+                                <li>Provided dedicated ICT support to Kenneth Matiba Hospital — developed the hospital's official website and maintained network infrastructure.</li>
+                                <li>Ensured uninterrupted network connectivity and system uptime across county health facilities.</li>
+                            </ul>
+                        </div>
+                    </div>
 
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-year">May 2022 — Dec 2022</div>
+                            <h4>Junior Developer Attaché</h4>
+                            <h5>Karen Hospital</h5>
+                            <ul>
+                                <li>Collaborated with the customer relations team to install a queuing system and train staff, improving turnaround time by 60%.</li>
+                                <li>Managed PostgreSQL databases and maintained procedures and reports providing technical support to the entire organization.</li>
+                            </ul>
+                        </div>
+                    </div>
 
-    <!--skills section design-->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-year">Aug 2022 — Sep 2022</div>
+                            <h4>Election ICT Clerk</h4>
+                            <h5>IEBC — Kenya General Elections</h5>
+                            <ul>
+                                <li>Ensured the biometric authentication process was conducted smoothly and efficiently.</li>
+                                <li>Worked with election officials to maintain equipment and security measures for the integrity of the 2022 national elections.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education Column -->
+            <div class="timeline-col">
+                <h3 class="col-title"><i class='bx bx-graduation'></i> Education</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-year">2018 — 2023</div>
+                            <h4>BSc. Software Development</h4>
+                            <h5>KCA University, Nairobi</h5>
+                            <p>Graduated with a Second Class Upper Division. Gained strong foundations in software engineering, database systems, and network security.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-year">2014 — 2017</div>
+                            <h4>Kenya Certificate of Secondary Education</h4>
+                            <h5>Moi Tea Secondary School</h5>
+                            <p>Completed A-Levels with a mean grade of B–.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="section-label">// 03 — Work</div>
+        <h2 class="heading">My <span>Projects</span></h2>
+        <p class="section-sub">A selection of websites and platforms I've built and maintained.</p>
+
+        <div class="projects-grid">
+
+            <div class="project-card featured">
+                <div class="project-tag">Featured</div>
+                <div class="project-icon"><i class='bx bx-dollar-circle'></i></div>
+                <h3>Financial Platform</h3>
+                <p>A fully functional financial services website built to streamline access to financial products and provide a professional digital presence for a finance company.</p>
+                <div class="project-tech">
+                    <span>Wordpress</span><span>UI/UX</span><span>HTML/CSS</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://mburaconsulting.co.ke/" class="proj-link">View Live <i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon"><i class='bx bx-plus-medical'></i></div>
+                <h3>Kenneth Matiba Hospital</h3>
+                <p>Designed and developed the official website for Kenneth Matiba Hospital in Muranga County, giving the facility a professional online presence for patients and staff.</p>
+                <div class="project-tech">
+                    <span>HTML/CSS</span><span>JavaScript</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://kmedh.muranga.go.ke" class="proj-link">View Live <i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon"><i class='bx bx-accessibility'></i></div>
+                <h3>InclusiFit</h3>
+                <p>Built and maintain InclusiFit — a platform promoting inclusive menstrual products, designed with inclusivity and comfortability at its core.</p>
+                <div class="project-tech">
+                    <span>Django</span><span>Python</span><span>UI/UX</span><span>MySQL</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://inclusifit.fit" class="proj-link">View Live <i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon"><i class='bx bx-globe'></i></div>
+                <h3>Jinsiangu</h3>
+                <p>Ongoing maintenance and updates for the Jinsiangu website — ensuring uptime, performance, and content freshness for a Kenyan-based non profit organization.</p>
+                <div class="project-tech">
+                    <span>Squarespace</span><span>Maintenance</span>
+                </div>
+                <div class="project-links">
+                    <a href="https:jinsiangu.org" class="proj-link">View Live <i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Skills Section -->
     <section class="skills" id="skills">
-        <h2 class="heading"> My <span>Skills</span></h2>
-        <div class="skills-row">
+        <div class="section-label">// 04 — Skills</div>
+        <h2 class="heading">My <span>Skills</span></h2>
 
-            <div class="skills-column">
-                <h3 class="title"> Coding Skills</h3>
-                <div class="skills-box">
-                    <div class="skills-content">
-                        <div class="progress">
-                            <h3> HTML <span>90%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-                        <div class="progress">
-                            <h3> CSS <span>70%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-                        <div class="progress">
-                            <h3> JavaScript <span>65%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-                        <div class="progress">
-                            <h3> Python <span>70%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
+        <div class="skills-grid">
+            <div class="skills-col">
+                <h3 class="col-title"><i class='bx bx-code-curly'></i> Coding Skills</h3>
+                <div class="skill-bars">
+                    <div class="skill-item">
+                        <div class="skill-info"><span>HTML/CSS</span><span>90%</span></div>
+                        <div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Python</span><span>75%</span></div>
+                        <div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Django</span><span>70%</span></div>
+                        <div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>JavaScript</span><span>65%</span></div>
+                        <div class="skill-bar"><div class="skill-fill" style="--w:65%"></div></div>
                     </div>
                 </div>
             </div>
 
-
-            <div class="skills-column">
-                <h3 class="title">Professional skills </h3>
-                <div class="skills-box">
-                    <div class="skills-content">
-                        <div class="progress">
-                            <h3> Web Design <span>80%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-                        <div class="progress">
-                            <h3> Web Development <span> 70%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-                        <div class="progress">
-                            <h3> Graphic Design <span>90%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-                        <div class="progress">
-                            <h3>Cyber Sec<span>70%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
+            <div class="skills-col">
+                <h3 class="col-title"><i class='bx bx-palette'></i> Design & Platforms</h3>
+                <div class="skill-bars">
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Graphic Design (Canva)</span><span>90%</span></div>
+                        <div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div>
                     </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>WordPress</span><span>80%</span></div>
+                        <div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Squarespace</span><span>75%</span></div>
+                        <div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Web Design</span><span>80%</span></div>
+                        <div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-col">
+                <h3 class="col-title"><i class='bx bx-shield'></i> Specialisations</h3>
+                <div class="skill-tags">
+                    <span>Cybersecurity</span>
+                    <span>Network Admin</span>
+                    <span>Database Management</span>
+                    <span>AI Chatbots</span>
+                    <span>PostgreSQL</span>
+                    <span>ICT Support</span>
+                    <span>Hospital Systems</span>
+                    <span>Linux</span>
+                    <span>System Installation</span>
+                    <span>Staff Training</span>
                 </div>
             </div>
         </div>
-
     </section>
 
+    <!-- Contact Section -->
     <section class="contact" id="contact">
-        <h2 class="heading"> contact <span> Me!</span></h2>
-        <form action="#">
-            <div class="input-box">
-                <div class="input-field">
-                    <input type="text" placeholder="Full Name" required>
-                    <span class="focus"></span>
+        <div class="section-label">// 05 — Contact</div>
+        <h2 class="heading">Get In <span>Touch</span></h2>
+        <p class="section-sub">Have a project in mind or want to work together? Let's talk.</p>
+
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class='bx bx-map'></i>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Nairobi / Muranga, Kenya</p>
+                    </div>
                 </div>
-                <div class="input-field">
-                    <input type="text" placeholder="Email Address" required>
-                    <span class="focus"></span>
+                <div class="contact-item">
+                    <i class='bx bx-envelope'></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>lee.kimani.w@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class='bx bxl-github'></i>
+                    <div>
+                        <h4>GitHub</h4>
+                        <p>github.com/kimani3</p>
+                    </div>
+                </div>
+                <div class="contact-socials">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#"><i class='bx bxl-github'></i></a>
                 </div>
             </div>
 
-            <div class="input-box">
-                <div class="input-field">
-                    <input type="number" placeholder="Mobile Number" required>
-                    <span class="focus"></span>
+            <form class="contact-form" action="#">
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
                 </div>
-                <div class="input-field">
-                    <input type="text" placeholder="Email Subject" required>
-                    <span class="focus"></span>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="tel" placeholder="Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject" required>
+                    </div>
                 </div>
-            </div>
-            <div class="textarea-field">
-                <textarea name=""  cols="20" rows="10" placeholder="Your Message" required></textarea>
-                <span class="focus"></span>
-            </div>
-            <div class="btn-box btns">
-                <a href="#" type="submit" class="btn"> Submit </a>
-            </div>
-        </form>
+                <div class="form-group">
+                    <textarea rows="6" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary full-width">Send Message <i class='bx bx-send'></i></button>
+            </form>
+        </div>
     </section>
-    <script src="script.js"></script>
-</body>
 
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Designed & Built by <span>Boreas Lee Kimani</span> © 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Scroll reveal
+        const reveals = document.querySelectorAll('.timeline-item, .project-card, .skill-item, .skill-col');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) e.target.classList.add('visible');
+            });
+        }, { threshold: 0.1 });
+        reveals.forEach(el => observer.observe(el));
+
+        // Sticky header
+        window.addEventListener('scroll', () => {
+            document.getElementById('header').classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // Mobile menu
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            document.querySelector('.navbar').classList.toggle('open');
+            this.classList.toggle('active');
+        });
+
+        // Animate skill bars on scroll
+        const bars = document.querySelectorAll('.skill-fill');
+        const barObserver = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) e.target.style.width = e.target.style.getPropertyValue('--w');
+            });
+        }, { threshold: 0.3 });
+        bars.forEach(b => { b.style.width = '0'; barObserver.observe(b); });
+    </script>
+</body>
 </html>
